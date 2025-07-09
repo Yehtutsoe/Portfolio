@@ -13,7 +13,7 @@ function Resume() {
           </Card.Text>
           <Button 
             variant="primary" 
-            href="/YeHtutSoe_Resume.pdf" 
+            href="/YeHtutSoe(Resume).pdf" 
             target="_blank" 
             rel="noopener noreferrer"
           >

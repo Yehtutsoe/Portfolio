@@ -12,6 +12,18 @@ function Certifications() {
           <Card.Text>
             Training focused on ASP.NET Identity, EF Core, MVC, and more. Final project: Point of Sale system.
           </Card.Text>
+          // ...existing code...
+          <Card.Text>
+            Training focused on ASP.NET Identity, EF Core, MVC, and more. Final project: Point of Sale system.
+          </Card.Text>
+          <a 
+            href="/Certificate.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="btn btn-primary mt-2"
+          >
+            View Certificate (PDF)
+          </a>
         </Card.Body>
       </Card>
     </Container>
