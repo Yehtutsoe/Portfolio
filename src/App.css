@@ -48,3 +48,26 @@ section {
     padding: 60px 0;
   }
 }
+/* Resume Modal Styling */
+.resume-modal .modal-header {
+  border-bottom: none;
+}
+
+.resume-modal .modal-footer {
+  border-top: none;
+}
+
+/* Make iframe look better */
+.resume-modal iframe {
+  min-height: 500px;
+}
+
+/* Button hover effects */
+.btn-resume {
+  transition: all 0.3s ease;
+}
+
+.btn-resume:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

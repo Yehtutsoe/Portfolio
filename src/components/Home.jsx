@@ -1,4 +1,5 @@
 import React from 'react';
+import ResumeModal from './ResumeModal';
 import { Container, Row, Col } from 'react-bootstrap';
 import profileImage from '../assets/profile.jpg';
 
@@ -13,6 +14,7 @@ const Home = () => {
             <p className="lead mb-4">
               Career-transitioning from Banking Sector with over 10 years of experience
             </p>
+            <ResumeModal />
             <div className="d-flex flex-column flex-sm-row gap-3">
               <a href="mailto:yeandzarforever@gmail.com" className="btn btn-primary btn-lg">
                 Email Me
