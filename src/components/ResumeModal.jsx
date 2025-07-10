@@ -38,7 +38,7 @@ const ResumeModal = () => {
         </Modal.Header>
         <Modal.Body className="p-0">
           <iframe 
-            src="/Ye_Htut_Soe_Resume.pdf" 
+            src="/YeHtutSoe(Resume).pdf" 
             width="100%" 
             height="500px"
             title="Ye Htut Soe Resume"
