@@ -12,14 +12,29 @@ function Education() {
           <Card.Text>
             Graduated with a focus on software engineering, algorithms, and web development.
           </Card.Text>
-          <a
-            href="/YeHtutSoe(Degree).pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary mt-2"
-          >
-            View Degree Certificate (PDF)
-          </a>
+          <div className="row">
+            <div className="col-4">
+              <a
+                href="/YeHtutSoe(Degree).pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary mt-2"
+              >
+                View Degree Certificate (PDF)
+              </a>
+            </div>
+            <div className="col-3">
+              <a
+                href="/Certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-success mt-2"
+              >
+                View Certificate (PDF)
+              </a>
+            </div>
+          </div>
+          
         </Card.Body>
       </Card>
     </Container>

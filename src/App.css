@@ -115,4 +115,25 @@ section {
     margin-bottom: 10px;
   }
 }
+/* Make #home truly full-width */
+#home {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove padding from Bootstrap’s container and row */
+#home {
+  width: 100vw;           /* Full viewport width */
+  margin: 0;
+  padding: 30px 0 0 0;
+  background-color: #f8f9fa;
+}
+
+.container-fluid, .row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+
 
