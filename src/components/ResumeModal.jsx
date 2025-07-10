@@ -54,7 +54,7 @@ const ResumeModal = () => {
           </Button>
           <Button 
             variant="primary" 
-            href="/Ye_Htut_Soe_Resume.pdf" 
+            href="/YeHtutSoe(Resume).pdf" 
             download
             className="ms-2"
           >
