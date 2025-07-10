@@ -1,12 +1,12 @@
 import React from 'react';
 import ResumeModal from './ResumeModal';
 import { Container, Row, Col } from 'react-bootstrap';
-import profileImage from '../assets/profile.jpg';
+import profileImage from '../assets/profile1.jpg';
 
 const Home = () => {
   return (
-    <section id="home" className="py-5 bg-light w-100">
-      <Container>
+    <section id="home" className="bg-light w-100">
+      <Container fluid>
         <Row className="align-items-center">
           <Col md={6} className="text-center text-md-start">
             <h1 className="display-4 fw-bold">Ye Htut Soe</h1>
