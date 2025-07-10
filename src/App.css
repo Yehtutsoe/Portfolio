@@ -1,7 +1,17 @@
-/* Custom styles */
+/* 🔵 Profile Image Animation */
 .profile-image-container {
   position: relative;
   display: inline-block;
+  border-radius: 50%;
+  padding: 8px;
+  background: linear-gradient(135deg, #0d6efd 25%, #6f42c1 100%);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.profile-image-container img {
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .profile-image-container::before {
@@ -14,60 +24,94 @@
   border: 2px dashed #0d6efd;
   border-radius: 50%;
   opacity: 0.5;
-  animation: rotate 20s linear infinite;
+  animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
+/* 🧾 Resume Modal */
+.resume-modal .modal-content {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.resume-modal .modal-header,
+.resume-modal .modal-footer {
+  background: #f8f9fa;
+  border: none;
+  padding: 15px 25px;
+}
+
+.resume-modal iframe {
+  min-height: 500px;
+  border: none !important;
+}
+
+/* 📄 Section Padding */
 section {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
+/* 🧊 Card Hover */
 .card {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
+/* 🔘 Button Effects */
 .btn {
   transition: all 0.3s ease;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font-weight: 500;
 }
 
-/* Responsive adjustments */
+.btn-resume:hover, .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.2);
+}
+
+/* 📑 Navbar */
+.navbar {
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  background-color: #0d6efd !important;
+}
+
+.navbar-nav {
+  gap: 1rem;
+}
+
+.nav-link {
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+  background-color: rgba(13, 110, 253, 0.1);
+  transform: translateY(-1px);
+}
+
+/* 📱 Responsive Adjustments */
 @media (max-width: 768px) {
   section {
     padding: 60px 0;
   }
-}
-/* Resume Modal Styling */
-.resume-modal .modal-header {
-  border-bottom: none;
-}
 
-.resume-modal .modal-footer {
-  border-top: none;
-}
-
-/* Make iframe look better */
-.resume-modal iframe {
-  min-height: 500px;
-}
-
-/* Button hover effects */
-.btn-resume {
-  transition: all 0.3s ease;
-}
-
-.btn-resume:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }

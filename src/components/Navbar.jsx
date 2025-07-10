@@ -7,9 +7,9 @@ const CustomNavbar = () => {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="py-3">
+      <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="py-2">
         <Container>
-          <Navbar.Brand href="#home" className="fw-bold">
+          <Navbar.Brand href="#home" className="fw-bold fs-4 me-4">
             YE HTUT SOE
           </Navbar.Brand>
           
@@ -17,28 +17,30 @@ const CustomNavbar = () => {
           
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-center">
-              <Nav.Link href="#home" className="mx-2">Home</Nav.Link>
-              <Nav.Link href="#about" className="mx-2">About</Nav.Link>
-              <Nav.Link href="#education" className="mx-2">Education</Nav.Link>
-              <Nav.Link href="#projects" className="mx-2">Projects</Nav.Link>
-              <Nav.Link href="#contact" className="mx-2">Contact</Nav.Link>
+              <Nav.Link href="#home" className="px-3 mx-1">Home</Nav.Link>
+              <Nav.Link href="#about" className="px-3 mx-1">About</Nav.Link>
+              <Nav.Link href="#education" className="px-3 mx-1">Education</Nav.Link>
+              <Nav.Link href="#projects" className="px-3 mx-1">Projects</Nav.Link>
+              <Nav.Link href="#contact" className="px-3 mx-1">Contact</Nav.Link>
               
-              <Button 
-                variant="outline-light" 
-                className="mx-2"
-                onClick={() => setShowResumeModal(true)}
-              >
-                <FaFilePdf className="me-2" /> Resume
-              </Button>
-              
-              <Nav.Link 
-                href="https://github.com/Yehtutsoe" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="ms-2"
-              >
-                <FaGithub size={20} />
-              </Nav.Link>
+              <div className="d-flex ms-4">
+                <Button 
+                  variant="outline-light" 
+                  onClick={() => setShowResumeModal(true)}
+                  className="mx-2 px-3 py-2"
+                >
+                  <FaFilePdf className="me-2" /> View Resume
+                </Button>
+                
+                <Nav.Link 
+                  href="https://github.com/Yehtutsoe" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="mx-2 px-2 py-2"
+                >
+                  <FaGithub size={20} />
+                </Nav.Link>
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -48,46 +50,39 @@ const CustomNavbar = () => {
       <Modal 
         show={showResumeModal} 
         onHide={() => setShowResumeModal(false)} 
-        size="lg" 
+        size="xl" 
         centered
-        backdrop="static"
         className="resume-modal"
       >
-        <Modal.Header className="bg-dark text-white">
-          <Modal.Title>
-            <FaFilePdf className="me-2" /> YE HTUT SOE - RESUME
+        <Modal.Header closeButton className="bg-dark text-white">
+          <Modal.Title className="fs-5">
+            <FaFilePdf className="me-2" /> YE HTUT SOE - PROFESSIONAL RESUME
           </Modal.Title>
-          <Button 
-            variant="outline-light" 
-            onClick={() => setShowResumeModal(false)}
-            className="btn-sm"
-          >
-            <FaTimes />
-          </Button>
         </Modal.Header>
         <Modal.Body className="p-0">
           <iframe 
-            src="/Ye_Htut_Soe_Resume.pdf" 
+            src="/Ye_Htut_Soe_Resume.pdf#view=FitH" 
             width="100%" 
-            height="500px"
+            height="600px"
             title="Ye Htut Soe Resume"
             style={{ border: 'none' }}
           />
         </Modal.Body>
         <Modal.Footer className="bg-light">
           <Button 
-            variant="outline-secondary" 
-            onClick={() => setShowResumeModal(false)}
-          >
-            Close
-          </Button>
-          <Button 
             variant="primary" 
             href="/Ye_Htut_Soe_Resume.pdf" 
             download
-            className="ms-2"
+            className="px-4"
           >
-            <FaDownload className="me-2" /> Download Resume
+            <FaDownload className="me-2" /> Download PDF
+          </Button>
+          <Button 
+            variant="outline-secondary" 
+            onClick={() => setShowResumeModal(false)}
+            className="px-4"
+          >
+            <FaTimes className="me-2" /> Close
           </Button>
         </Modal.Footer>
       </Modal>
