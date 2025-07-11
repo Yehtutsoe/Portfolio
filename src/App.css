@@ -130,9 +130,10 @@ section {
   background-color: #f8f9fa;
 }
 
-.container-fluid, .row {
-  margin: 0 !important;
+/* Use with care */
+.container-fluid.no-padding, .row.no-padding {
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 

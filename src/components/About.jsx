@@ -11,7 +11,7 @@ const About = () => {
             <Card className="shadow-sm">
               <Card.Body>
                 <p className="lead">
-                  I'm a career-transitioning C# ASP.NET Developer with over 10 years of extensive experience in the banking sector.
+                  I'm a career-transitioning C# ASP.NET Developer and over 10 years of extensive experience in the banking sector.
                 </p>
                 <p>
                   I'm a strategist in bridging technology with real-world business challenges by automating workflows and streamlining operations. 
