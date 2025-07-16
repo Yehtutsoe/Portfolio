@@ -11,9 +11,9 @@ const Projects = () => {
             <Card className="h-100 shadow-sm">
               <Card.Body>
                 <Card.Title>CloudPOS - Retail Point-of-Sale System</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Tech Stack: C#, WinForms, MSSQL</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">Tech Stack: C#, Web, MSSQL</Card.Subtitle>
                 <Card.Text>
-                  A desktop application designed for phone shops to automate inventory and streamline daily sales operations.
+                  A Web application designed for phone shops to automate inventory and streamline daily sales operations.
                 </Card.Text>
                 <ul>
                   <li>Liaised with a cross-functional team to outline requirements and consolidate key business functions into modules</li>

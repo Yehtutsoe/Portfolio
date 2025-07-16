@@ -30,8 +30,6 @@ function Education() {
               >
                 View Certificate (PDF)
               </a>
-           
-          
         </Card.Body>
       </Card>
     </Container>

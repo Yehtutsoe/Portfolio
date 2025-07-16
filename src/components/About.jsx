@@ -4,7 +4,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 const About = () => {
   return (
     <section id="about" className="py-5">
-      <Container>
+      <Container fluid>
         <h2 className="text-center mb-5">About Me</h2>
         <Row>
           <Col lg={8} className="mx-auto">

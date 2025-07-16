@@ -1,43 +1,39 @@
-import React from 'react';
-import ResumeModal from './ResumeModal';
-import { Container, Row, Col } from 'react-bootstrap';
-import profileImage from '../assets/profile1.jpg';
+import React from 'react'
+import { Container, Row, Col, Button } from 'react-bootstrap'
+import profileImage from '../assets/profile1.jpg'
 
 const Home = () => {
   return (
-    <section id="home" className="bg-light w-100">
-      <Container fluid>
+    <section id="home" className="section bg-light">
+      <div className="section-container">
         <Row className="align-items-center">
-          <Col md={6} className="text-center text-md-start">
-            <h1 className="display-4 fw-bold">Ye Htut Soe</h1>
-            <h2 className="text-muted mb-4">C# ASP.NET Developer</h2>
+          <Col lg={6} className="text-center text-lg-start mb-5 mb-lg-0">
+            <h1 className="display-4 fw-bold mb-4">Ye Htut Soe</h1>
+            <h2 className="text-primary mb-4">C# .NET Developer</h2>
             <p className="lead mb-4">
               Career-transitioning from Banking Sector with over 10 years of experience
             </p>
-            
-            <div className="d-flex flex-column flex-sm-row gap-3">
-              <a href="mailto:yeandzarforever@gmail.com" className="btn btn-primary btn-lg mt-3">
+            <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+              <Button variant="primary" size="lg" href="#contact">
+                Contact Me
+              </Button>
+              <Button variant="outline-primary" size="lg" href="mailto:yeandzarforever@gmail.com">
                 Email Me
-              </a>
-              <a href="tel:+959972869583" className="btn btn-outline-secondary btn-lg mt-3">
-                Call Me
-              </a>
+              </Button>
             </div>
           </Col>
-          <Col md={6} className="text-center mt-4 mt-md-0">
+          <Col lg={4} className="text-center">
             <div className="profile-image-container">
               <img 
                 src={profileImage} 
-                alt="Ye Htut Soe" 
-                className="img-fluid rounded-circle border border-5 border-primary"
-                style={{ width: '300px', height: '300px', objectFit: 'cover' }}
+                alt="Ye Htut Soe"
               />
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </section>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

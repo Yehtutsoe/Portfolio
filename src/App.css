@@ -5,13 +5,16 @@
   border-radius: 50%;
   padding: 8px;
   background: linear-gradient(135deg, #0d6efd 25%, #6f42c1 100%);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image-container img {
+  width: 150px;          /* set a fixed width */
+  height: 150px;         /* set a fixed height */
+  object-fit: cover;     /* make sure it fills the circle */
   border-radius: 50%;
   border: 5px solid white;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image-container::before {
@@ -28,9 +31,14 @@
 }
 
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
+
 
 /* 🧾 Resume Modal */
 .resume-modal .modal-content {

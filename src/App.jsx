@@ -10,7 +10,11 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App container-fluid no-padding">
+// In your main layout component (App.jsx or similar)
+<div className="App">
+
+  <main className="container-fluid">
+    <div className="container">
       <Navbar />
       <Home />
       <About />
@@ -18,6 +22,8 @@ function App() {
       <Projects />
       <Contact />
     </div>
+  </main>
+</div>
   );
 }
 
